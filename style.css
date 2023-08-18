@@ -98,14 +98,16 @@ header {
   cursor: pointer;
   border: 3px solid #0056d6;
   background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 40%;
+  border-radius: 50%;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
   transition: all 0.1s ease;
+  max-width: 80px;
+  height: auto;
 }
 
 .choices .choice:nth-child(2) {
-  margin: 0 20px;
+  margin: 0 30px;
 }
 
 .choices .choice:hover {
@@ -146,24 +148,31 @@ h2 {
 
 @media screen and (max-width: 480px) {
   body {
-    padding: 0 22px;
+    padding: 0 15px;
   }
   .title {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    margin-bottom: 40px;
   }
 
   /* --------------Restart button */
   .restart-btn {
-    font-size: 1rem;
+    font-size: 3rem;
     margin-top: 20px;
+    margin-bottom: 35px;
+  }
+
+  .choices .choice {
+    max-width: 60px;
+    height: auto;
   }
 
   /* --------------Player choices */
   .choices .choice:nth-child(2) {
-    margin: 0 10px;
+    margin: 0 15px;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
 
   /* --------------Score board */
@@ -172,7 +181,17 @@ h2 {
     width: 180px;
   }
   .badge {
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+
+  #user-badge {
+    position: absolute;
+    left: -25px;
+  }
+
+  #cpu-badge {
+    position: absolute;
+    right: -40px;
   }
 
   /* --------------Score board */
