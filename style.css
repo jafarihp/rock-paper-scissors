@@ -129,21 +129,6 @@ h2 {
   font-size: 2.5rem;
 }
 
-/* ------------------------------Modal */
-.text-win {
-  color: #289a28;
-  font-size: 4rem;
-}
-
-.text-lose {
-  color: #ff0000;
-  font-size: 4rem;
-}
-
-.modal-content p {
-  font-size: 1.8rem;
-}
-
 /* ------------------------------Media Queries */
 
 @media screen and (max-width: 480px) {
@@ -201,7 +186,24 @@ h2 {
   .text-lose {
     font-size: 3rem;
   }
-  .modal-content p {
-    font-size: 1.5rem;
+  footer {
+    margin-top: 100px;
+    color: rgb(1, 170, 182);
   }
+}
+footer {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer a {
+  margin-left: 5px;
+}
+footer a:hover {
+  color: #ffffff;
+  transform: scaleY(1.5);
+}
+footer a:visited {
+  color: whitesmoke;
 }

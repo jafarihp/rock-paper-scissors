@@ -11,7 +11,7 @@ const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
 
 function getCpuChoice() {
-  const choices = ["rock", "paper", "scissors"];
+  const choices = ["Rock", "Paper", "Scissors"];
   const randomNumber = Math.floor(Math.random() * 3);
   return choices[randomNumber];
 }
@@ -20,20 +20,20 @@ function win(userChoice, cpuChoice) {
   userScore++;
   userScore_span.innerHTML = userScore;
   cpuScore_span.innerHTML = cpuScore;
-  alert("You win!");
+  swal("You Win!", `Computer Choose "${cpuChoice}"`, "success");
 }
 
 function lose(userChoice, cpuChoice) {
   cpuScore++;
   userScore_span.innerHTML = userScore;
   cpuScore_span.innerHTML = cpuScore;
-  alert("You Lose!");
+  swal("You Lose!", `Computer Choose "${cpuChoice}"`, "error");
 }
 
 function draw(userChoice, cpuChoice) {
   userScore_span.innerHTML = userScore;
   cpuScore_span.innerHTML = cpuScore;
-  alert("Draw!!!");
+  swal("Draw!!!", `Computer Choose "${cpuChoice}"`, "warning");
 }
 
 function play(userChoice) {
