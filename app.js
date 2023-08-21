@@ -11,7 +11,7 @@ const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
 
 function getCpuChoice() {
-  const choices = ["Rock", "Paper", "Scissors"];
+  const choices = ["rock", "paper", "scissors"];
   const randomNumber = Math.floor(Math.random() * 3);
   return choices[randomNumber];
 }
